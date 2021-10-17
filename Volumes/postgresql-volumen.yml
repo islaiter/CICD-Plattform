@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgresql-volumen
+  namespace: proyectocicd
+spec: 
+  storageClassName: postgresql-volumen
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 25Gi
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /data/postgresql-volumen/

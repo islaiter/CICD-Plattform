@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nexus-volumen
+  namespace: proyectocicd
+spec: 
+  storageClassName: nexus-volumen
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 20Gi
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /data/nexus-volumen/
