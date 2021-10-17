@@ -12,3 +12,4 @@ TO-DO:
 
 * Update documentation with latest changes so it's up to date
 * Make an English version of said documentation
+* Create script that will automate most of the installation/configuration process
